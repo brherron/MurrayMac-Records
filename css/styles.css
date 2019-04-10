@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css?family=Signika:300,400');
+
+
+* {
+  font-family: 'Verdana', sans-serif;
+}
+
+h1 {
+  font-size: 112px;
+  font-size: 5.9vw;
+  letter-spacing: -5px;
+  line-height: 110%;
+  position: fixed;
+  top: 34%;
+  left: 10%;
+  opacity: 0.85;
+}
+
+h1 img {
+  width: 7.6vw;
+  transform: translateX(8%);
+}
+
+.animate {
+  -webkit-animation: animate 1.2s cubic-bezier(.2, .6, .2, 1);
+  -moz-animation: animate 1.2s cubic-bezier(.2, .6, .2, 1);
+  animation: animate 1.2s cubic-bezier(.2, .6, .2, 1);
+  -webkit-animation-fill-mode: backwards;
+  -moz-animation-fill-mode: backwards;
+  animation-fill-mode: backwards
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: translateY(100%)
+  }
+
+  100% {
+    -webkit-transform: translateY(0)
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(100%)
+  }
+
+  100% {
+    transform: translateY(0)
+  }
+}
+
+.delay {
+  -webkit-animation-delay: .3s;
+  animation-delay: .3;
+}
+
+.delay2 {
+  -webkit-animation-delay: .6s;
+  animation-delay: .6;
+}
+
+.delay3 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1;
+}
+
+.artists {
+  position: absolute;
+  top: 100vh;
+  left: 50%;
+  right: 5%;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
+}
+
+.artists h4 {
+  position: absolute;
+  top: -12vh;
+  font-weight: 300;
+  font-size: 1.7rem;
+  margin-left: 20rem;
+}
+
+.artists h4 a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Signika';
+}
+
+.artist1,
+.artist2,
+.artist3 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.artist1 a {
+  width: 65%;
+}
+
+.artist1 a img {
+  width: 100%;
+}
+
+.artist1 h2 {
+  padding-left: 10px;
+  width: 30%;
+  font-size: 3.3vw;
+  letter-spacing: -2px;
+  margin: 0!important;
+}
+
+.artist1 p {
+  width: 80%;
+  line-height: 1.7vw;
+  letter-spacing: 1px;
+  font-size: 1.2vw;
+  margin-bottom: 20vh;
+}
+
+.artist2 a {
+  width: 60%;
+}
+
+.artist2 a img {
+  width: 100%;
+}
+
+.artist2 h2 {
+  text-align: right;
+  padding-right: 20px;
+  width: 30%;
+  font-size: 3.3vw;
+  letter-spacing: -2px;
+  margin: 0!important;
+}
+
+.artist2 p {
+  text-align: right;
+  margin-left: 13%;
+  width: 80%;
+  line-height: 1.7vw;
+  letter-spacing: 1px;
+  font-size: 1.2vw;
+  margin-bottom: 20vh;
+}
+
+.artist3 a {
+  width: 65%;
+}
+
+.artist3 a img {
+  width: 100%;
+}
+
+.artist3 h2 {
+  padding-left: 10px;
+  width: 30%;
+  font-size: 3.3vw;
+  letter-spacing: -2px;
+  margin: 0!important;
+}
+
+.artist3 p {
+  width: 80%;
+  line-height: 1.7vw;
+  letter-spacing: 1px;
+  font-size: 1.2vw;
+  margin-bottom: 20vh;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  color: #000000;
+}
+
+.footer h2 {
+  text-align: center;
+  width: 80%;
+  font-size: 3vw;
+  opacity: 0.4;
+}
+
+.footer .contact-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 2vh;
+  padding-bottom: 0;
+}
+
+.first-name {
+  width: 45%;
+  margin-bottom: 5vh;
+  opacity: 0.4;
+}
+
+.email {
+  width: 45%;
+  margin-bottom: 5vh;
+  opacity: 0.4;
+}
+
+.message {
+  width: 100%;
+  opacity: 0.4;
+}
+
+.first-name,
+.email,
+.message {
+  padding: 1vh;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px #000000;
+  font-size: 1.2vw;
+  transition: 0.3s;
+}
+
+.btn {
+  margin: 5vh auto;
+  padding: 1.5vh 2.5vh;
+  border-radius: 5px;
+  border: 1px solid #000;
+  font-size: 1rem;
+  background-color: transparent;
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+.contact-form .first-name:hover,
+.contact-form .email:hover,
+.contact-form .message:hover,
+.btn:hover {
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 100px;
+  padding: 2vh;
+  padding-top: 0;
+}
+
+.socials ul {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  list-style: none;
+  padding: 0;
+}
+
+.sci .fa-facebook {
+  text-align: center;
+  width: 45px;
+}
+
+.sci a {
+  color: #000000;
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+.sci a:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.minutiae {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding: 2vh;
+}
+
+.minutiae h5 {
+  color: #00000090;
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 0;
+  margin: 3px;
+  font-size: 1.5vh;
+}
+
+.minutiae h5 a {
+  text-decoration: none;
+  color: #00000090;
+  transition: 0.3s;
+}
+
+.minutiae h5 a:hover {
+  text-decoration: underline;
+  color: #000000BF;
+  transition: 0.3s;
+}
+
+
+
+@media only screen and (max-width: 667px) {
+  h1 {
+    font-size: 14vw;
+  }
+
+  h1 img {
+    width: 20vw;
+  }
+
+  .artists {
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 5%;
+  }
+
+  .artists h4 {
+    margin-left: 0;
+    top: -3.3%;
+    left: 50%;
+  }
+
+  .artists h2 {
+    font-size: 7vw;
+  }
+
+  .artists p {
+    width: 100%;
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+
+  .footer {
+    margin: 0;
+  }
+
+  .footer h2 {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .footer .contact-form {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .first-name,
+  .email,
+  .message {
+    font-size: 12px;
+  }
+
+  .socials {
+    width: 100%;
+    padding: 0;
+  }
+
+  .socials ul {
+    width: 80%;
+  }
+}
