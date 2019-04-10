@@ -369,4 +369,14 @@ h1 img {
   .socials ul {
     width: 80%;
   }
+
+  .minutiae {
+    width: 100%;
+    padding: 0;
+  }
+
+  .minutiae h5 {
+    letter-spacing: 0;
+    font-size: 1.8vh;
+  }
 }
