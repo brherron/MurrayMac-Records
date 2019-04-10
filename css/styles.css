@@ -168,7 +168,7 @@ h1 img {
   line-height: 1.7vw;
   letter-spacing: 1px;
   font-size: 1.2vw;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
 }
 
 .footer {
@@ -234,9 +234,9 @@ h1 img {
   transition: 0.3s;
 }
 
-.contact-form .first-name:hover,
-.contact-form .email:hover,
-.contact-form .message:hover,
+.contact-form .first-name:hover, .first-name:active,
+.contact-form .email:hover, .email:active,
+.contact-form .message:hover, .message:active,
 .btn:hover {
   opacity: 0.9;
   transition: 0.3s;
