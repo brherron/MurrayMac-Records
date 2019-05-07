@@ -52,6 +52,7 @@ h1 img {
   }
 }
 
+
 .delay {
   -webkit-animation-delay: .3s;
   animation-delay: .3;
@@ -74,6 +75,10 @@ h1 img {
   right: 5%;
   padding-bottom: 5vh;
   padding-top: 5vh;
+}
+
+.artists p {
+  padding-top: 1rem;
 }
 
 .artists h4 {
@@ -176,6 +181,8 @@ h1 img {
 .carousel {
   width: 80%;
   margin-bottom: 4rem;
+  margin-left: auto;
+  margin-right: auto;
   /* background-color: rgb(167, 167, 167); */
 }
 
@@ -211,6 +218,7 @@ h1 img {
   width: 80%;
   font-size: 3vw;
   opacity: 0.4;
+  margin: 0 auto;
 }
 
 .footer .contact-form {
@@ -218,6 +226,7 @@ h1 img {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 80%;
+  margin: 0 auto;
   padding: 2vh;
   padding-bottom: 0;
 }
@@ -276,6 +285,7 @@ h1 img {
   height: 100px;
   padding: 2vh;
   padding-top: 0;
+  margin: 0 auto;
 }
 
 .socials ul {
@@ -309,6 +319,7 @@ h1 img {
   align-items: center;
   width: 80%;
   padding: 2vh;
+  margin: 0 auto;
 }
 
 .minutiae h5 {
@@ -318,6 +329,7 @@ h1 img {
   padding: 0;
   margin: 3px;
   font-size: 1.5vh;
+  transition: 0.3s;
 }
 
 .minutiae h5 a {

@@ -1,6 +1,6 @@
 <?php
 if($_POST["submit"]) {
-  $recipient="beau@murraymacrecords.com";
+  $recipient="booking@murraymacrecords.com";
   $subject="Form to email message";
   $sender=$_POST["sender"];
   $senderEmail=$_POST["senderEmail"];
