@@ -344,6 +344,10 @@ h1 img {
   transition: 0.3s;
 }
 
+#website {
+  display: none;
+}
+
 
 
 
@@ -425,3 +429,4 @@ h1 img {
     font-size: 1.8vh;
   }
 }
+

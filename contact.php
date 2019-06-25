@@ -6,6 +6,8 @@ if($_POST["submit"]) {
   $senderEmail=$_POST["senderEmail"];
   $message=$_POST["message"];
 
+  if(!empty($_POST['website'])) die();
+
   $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
 
   mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
