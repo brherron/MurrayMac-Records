@@ -261,6 +261,7 @@ h1 img {
 
 .btn {
   margin: 5vh auto;
+  margin-top: 2vh;
   padding: 1.5vh 2.5vh;
   border-radius: 5px;
   border: 1px solid #000;
@@ -348,7 +349,23 @@ h1 img {
   display: none;
 }
 
+#recaptcha-disclaimer {
+  display: block;
+  font-size: .4rem;
+  width: 100%;
+  padding: 1rem 0 0 0;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  transition: 0.3s;
+}
 
+.first-name:hover ~ #recaptcha-disclaimer { color: black; }
+.email:hover ~ #recaptcha-disclaimer { color: black; }
+.message:hover ~ #recaptcha-disclaimer { color: black; }
+.first-name:focus ~ #recaptcha-disclaimer { color: black; }
+.email:focus ~ #recaptcha-disclaimer { color: black; }
+.message:focus ~ #recaptcha-disclaimer { color: black; }
 
 
 
