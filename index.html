@@ -16,6 +16,7 @@
     <meta property="og:site_name" content="MurrayMac Records | Production Company">
     <meta property="og:title" content="MurrayMac Records | Production Company">
     <meta property="og:description" content="MurrayMac Records is a record production company based out of Wisconsin.">
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
     <!-- Title -->
     <title>MurrayMac Records | Production Company</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
@@ -147,8 +148,12 @@
           <input class="first-name" type="text" name="sender" placeholder="Your Name (required)" required>
           <input class="email" type="text" name="senderEmail" placeholder="Your Email (required)" required>
           <textarea class="message" name="message" type="text" rows="1" placeholder="Your Message"></textarea>
-          <div class="g-recaptcha" data-sitekey="6Lfm160UAAAAALX-f2DePZPBpUtcOsq7QxW19xHn"></div>
-          <input class="btn btnD1" type="submit" name="submit" value="Get in touch">
+          <button class="btn btnD1 g-recaptcha" 
+              data-sitekey="6Lfm160UAAAAALX-f2DePZPBpUtcOsq7QxW19xHn"
+              data-badge="inline"
+              data-callback="captchaSubmit">
+              Get in touch
+          </button>
         </form>
         <div class="socials">
           <ul class="sci">
@@ -181,7 +186,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
 
     <script src="jquery.bcSwipe.js"></script>
     <script>
@@ -209,10 +213,8 @@
         } // End if
       });
     });
-
     // Carousel Swipe
     $('.carousel').bcSwipe({ threshold: 50 });
-
     </script>
     <script>
       function captchaSubmit(data) {
