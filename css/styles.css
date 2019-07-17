@@ -344,10 +344,9 @@ h1 img {
   transition: 0.3s;
 }
 
-#website {
+.grecaptcha-badge {
   display: none;
 }
-
 
 
 

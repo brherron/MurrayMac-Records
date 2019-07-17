@@ -143,13 +143,12 @@
 
       <div class="footer">
         <h2>Contact Us</h2>
-        <form method="post" class="contact-form" action="contact.php">
+        <form id="contact" method="post" class="contact-form" action="contact.php">
           <input class="first-name" type="text" name="sender" placeholder="Your Name (required)" required>
           <input class="email" type="text" name="senderEmail" placeholder="Your Email (required)" required>
-          <input class="website" type="text" name="website" id="website">
           <textarea class="message" name="message" type="text" rows="1" placeholder="Your Message"></textarea>
+          <div class="g-recaptcha" data-sitekey="6Lfm160UAAAAALX-f2DePZPBpUtcOsq7QxW19xHn"></div>
           <input class="btn btnD1" type="submit" name="submit" value="Get in touch">
-
         </form>
         <div class="socials">
           <ul class="sci">
@@ -182,6 +181,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
     <script src="jquery.bcSwipe.js"></script>
     <script>
@@ -212,8 +212,12 @@
 
     // Carousel Swipe
     $('.carousel').bcSwipe({ threshold: 50 });
+
     </script>
-    
-    
+    <script>
+      function captchaSubmit(data) {
+        document.getElementById("contact").submit();
+      }
+    </script>
   </body>
 </html>
