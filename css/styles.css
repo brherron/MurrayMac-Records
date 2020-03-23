@@ -6,8 +6,8 @@
 }
 
 h1 {
-  font-size: 112px;
-  font-size: 5.9vw;
+  font-size: 100px;
+  font-size: 5vw;
   letter-spacing: -5px;
   line-height: 110%;
   position: fixed;
@@ -97,7 +97,8 @@ h1 img {
 
 .artist1,
 .artist2,
-.artist3 {
+.artist3,
+.artist4 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -124,7 +125,11 @@ h1 img {
   line-height: 1.7vw;
   letter-spacing: 1px;
   font-size: 1.2vw;
-  margin-bottom: 20vh;
+  margin-bottom: 15vh;
+}
+
+.artist2 {
+  justify-content: space-around;
 }
 
 .artist2 a {
@@ -137,7 +142,7 @@ h1 img {
 
 .artist2 h2 {
   text-align: right;
-  padding-right: 20px;
+  padding-right: 0;
   width: 30%;
   font-size: 3.3vw;
   letter-spacing: -2px;
@@ -151,7 +156,7 @@ h1 img {
   line-height: 1.7vw;
   letter-spacing: 1px;
   font-size: 1.2vw;
-  margin-bottom: 20vh;
+  margin-bottom: 15vh;
 }
 
 .artist3 a {
@@ -175,7 +180,39 @@ h1 img {
   line-height: 1.7vw;
   letter-spacing: 1px;
   font-size: 1.2vw;
-  margin-bottom: 10vh;
+  margin-bottom: 15vh;
+}
+
+.artist4 {
+  justify-content: space-around;
+}
+
+.artist4 a {
+  width: 60%;
+  float: right;
+}
+
+.artist4 a img {
+  width: 100%;
+}
+
+.artist4 h2 {
+  text-align: right;
+  padding-right: 20px;
+  width: 30%;
+  font-size: 3.3vw;
+  letter-spacing: -2px;
+  margin: 0!important;
+}
+
+.artist4 p {
+  text-align: right;
+  margin-left: 13%;
+  width: 80%;
+  line-height: 1.7vw;
+  letter-spacing: 1px;
+  font-size: 1.2vw;
+  margin-bottom: 15vh;
 }
 
 .carousel {
@@ -205,15 +242,28 @@ h1 img {
   padding-top: 4rem;
 }
 
+
+/* Music Player */
+.music-player {
+  padding: 50px 6vh 75px 6vh;
+}
+
+.player {
+  padding-top: 2vh;
+}
+
+
 .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
   color: #000000;
+  padding-top: 6vh;
 }
 
-.footer h2 {
+.footer h2,
+.music-player h2 {
   text-align: center;
   width: 80%;
   font-size: 3vw;
@@ -262,6 +312,7 @@ h1 img {
 .btn {
   margin: 5vh auto;
   margin-top: 2vh;
+  margin-bottom: 10vh;
   padding: 1.5vh 2.5vh;
   border-radius: 5px;
   border: 1px solid #000;
