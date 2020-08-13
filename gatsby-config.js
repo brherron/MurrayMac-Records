@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Country Music`,
-    description: `The official website for midwest country musician Tj Morrow. Find up-to-date music, shows, and contact information.`,
+    title: `Production Company`,
+    description: `The official website of MurrayMac Records - A production and recording company.`,
     author: `@brherron`,
-    siteUrl: `https://www.tjmorrowmusic.com`
+    siteUrl: `https://www.murraymacrecords.com`
   },
   plugins: [
     {

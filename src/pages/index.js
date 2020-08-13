@@ -1,11 +1,10 @@
 import React, { Component } from "react"
-import '../styles/styles.scss' 
+import '../styles/styles.css' 
 
 //Import Components
 import Header from '../components/header.js'
 import Hero from '../components/hero.js'
-import Shows from '../components/shows.js'
-import Contact from '../components/contact.js'
+import Artists from '../components/artists.js'
 import SEO from '../components/seo.js'
 
 if (typeof window !== "undefined") {
@@ -18,11 +17,12 @@ class IndexPage extends Component {
   render() {
     return (
       <div>
-        <SEO title="TJ MORROW" />
-        <Header />
-        <Hero />
-        <Shows />
-        <Contact />
+        <SEO title="MurrayMac Records" />
+        {/* <Header /> */}
+        <div className="container">
+          <Hero />
+          <Artists />
+        </div>
       </div>
     )
   }
