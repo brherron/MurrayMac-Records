@@ -177,12 +177,12 @@
         <!-- Contact Us Section -->
         <div class="footer">
           <h2>Contact Us</h2>
-          <form id="contact" method="post" class="contact-form" action="contact.php" data-netlify="true">
+          <form id="contact" method="post" class="contact-form" action="contact.php" data-netlify="true" netlify-honeypot="bot-field">
             <div class="hidden">
               <label>Don't fill this out if you're human: 
                 <input name="bot-field"/>
               </label>
-            </div>
+            </div> 
             <input class="first-name" type="text" name="sender" placeholder="Your Name (required)" required>
             <input class="email" type="text" name="senderEmail" placeholder="Your Email (required)" required>
             <textarea class="message" name="message" type="text" rows="1" placeholder="Your Message"></textarea>
