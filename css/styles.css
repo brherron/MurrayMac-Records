@@ -18,6 +18,10 @@ h1 {
   color: black;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 h1 img {
   width: 7.6vw;
   transform: translateX(8%);
